@@ -5,7 +5,7 @@ from transformers import AutoTokenizer, AutoModelForCausalLM
 
 os.environ["HUGGING_FACE_HUB_TOKEN"] = "YOUR_API"
 
-model_name = "codellama/CodeLlama-7b-Instruct-hf"
+model_name = "codellama/CodeLlama-7b-Instruct-hf" #We are using 7b Instruct due to constraints of not having a GPU, IF you have a good GPU you can try to implement this using 13b and higher size models.
 
 @st.cache_resource(show_spinner=False)
 def load_model():
