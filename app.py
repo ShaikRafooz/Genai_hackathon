@@ -1,3 +1,5 @@
+#This code is for kaggle and colab
+
 import streamlit as st
 import os
 import torch
